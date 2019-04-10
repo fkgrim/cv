@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Divergent - Personal Vcard Resume HTML Template</title>
+    <title>Crédit</title>
     <!-- META TAGS -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -56,69 +56,18 @@
     <div id="cv-page-right">
         <!-- THIS IMAGE WILL BE DISPLAYED ONLY ON MOBILE MODE ( 1024PX AND BELOW ) -->
         <div class="img-mobile-only">
-            <img src="images/photos/blog-small2.jpg" alt="" />
+            <img src="images/photos/features-small.jpg" alt="" />
         </div>
-        <!-- POST -->
-        <article class="cv-page-content">
-            <h1 class="border">Single Post</h1>
-            <p class="page-date">21 May 2015</p>
-            <p>Voluptate illum dolore ita ipsum, quid deserunt singulis, labore admodum ita multos malis ea nam nam tamen fore amet. Vidisse quid incurreret ut ut possumus transferrem si ita labore dolor si appellat, aut dolore doctrina. Commodo dolor esse in magna, a a multos senserit nam si aliqua iis multos.</p>
-            <!-- FLEX IMAGE -->
-            <figure class="caption-image">
-                <div>
-                    <img src="images/photos/img.jpg" alt="" />
-                </div>
-                <figcaption>Voluptate illum dolore</figcaption>
-            </figure>
-            <p>Appellat elit senserit litteris ubi ne eram voluptate commodo si aliqua occaecat ad quem enim, eram domesticarum fabulas quorum doctrina ut commodo efflorescere aut possumus. Cillum praetermissum mentitum quem cupidatat. Veniam a arbitror iis malis ab quo duis cupidatat. Tempor quem occaecat. Nescius si malis, non occaecat ne mentitum.</p>
-            <!-- BLOCKQUOTE -->
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia ipsum quis diam aliquam vel mollis nisi tempus. Nam et ante urna. Nescius si malis, non occaecat ne mentitum.</p>
-            </blockquote>
-            <p>Anim admodum o possumus. Ea eu nisi senserit, eiusmod elit sunt cupidatat fugiat. Ad an tamen eiusmod, incurreret eram proident. Et noster quem e tempor. Non culpa exquisitaque. Aut enim graviterque. Ne cupidatat illustriora.</p>
-            <hr />
-            <h3 class="border">Comments</h3>
-            <!-- COMMENTS -->
-            <!-- COMMENT 1 -->
-            <div>
-                <p class="meta">
-                    <a href="#">John Doe</a> - August 19, 2014 - <a href="#">Reply</a>
-                </p>
-                <div class="comments_content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a sapien odio, sit amet scelerisque felis. Maecenas tincidunt ligula eu magna tincidunt eget erat malesuada. Ut in diam et metus facilisis venenatis sit amet vel enim. Duis semper elementum felis.</p>
-                </div>
-            </div>
-            <!-- COMMENT REPLY -->
-            <div class="reply">
-                <p class="meta">
-                    <a href="#">Tom Black</a> - August 21, 2014 - <a href="#">Reply</a>
-                </p>
-                <div class="comments_content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a sapien odio, sit amet felis scelerisque felis. Maecenas tincidunt ligula eu magna tincidunt eget erat males. Ut in diam et metus facilisis venenatis sit amet vel enim. Duis semper elementum felis.</p>
-                </div>
-            </div>
-            <!-- COMMENT 2 -->
-            <div>
-                <p class="meta">
-                    <a href="#">Henry Ford</a> - August 15, 2014 - <a href="#">Reply</a>
-                </p>
-                <div class="comments_content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a sapien odio, sit amet scelerisque felis. Maecenas tincidunt ligula eu magna tincidunt eget erat malesuada. Ut in diam et metus facilisis venenatis sit amet vel enim. Duis semper elementum felis.</p>
-                </div>
-            </div>
-            <hr />
-            <!-- COMMENT FORM -->
-            <h3 class="border">Write a Comment</h3>
-            <form class="comment-form">
-                <label>Your Name</label>
-                <input id="senderName" type="text" maxlength="50" required="required" />
-                <label>Your E-mail</label>
-                <input id="senderEmail" type="text" maxlength="50" required="required" />
-                <label>Your Comment</label>
-                <textarea id="comment" required="required"></textarea>
-                <input type="submit" class="cv-button primary" value="Send Comment" />
-            </form>
-        </article>
+        <div class="cv-page-content">
+            <h2 class="border">Crédits</h2>
+            <p>Ce site n'aurais pas été ce qu'il est sans :
+            </p>
+            <ul>
+                <li>Le fork du Template Divergent </li>
+                <li>Les photos de Stéphane Koeberlé</li>
+            </ul>
+
+        </div>
     </div>
     <!-- FOOTER -->
     <footer id="footer" class="fixed-footer">
@@ -285,13 +234,53 @@
     <script type="text/javascript">
         jQuery(document).ready(function () {
             "use strict";
-            jQuery('#cv-page-left').backstretch("images/photos/blog-big2.jpg");
+            jQuery('#cv-page-left').backstretch("images/photos/features.jpg");
         });
     </script>
     <!-- TOOLTIPS -->
     <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
     <!-- SIDEBAR SCROLLBAR -->
     <script type="text/javascript" src="js/scrollbar.js"></script>
+    <!-- ACCORDION -->
+    <script type="text/javascript" src="js/accordion.js"></script>
+    <!-- TABS -->
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <!-- HORIZONTAL TABS -->
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#horizontalTab').easyResponsiveTabs({
+                type: 'default',
+                width: 'auto',
+                fit: true,
+                activate: function () {
+                    if (jQuery(window).width() > 768) {
+                        jQuery('#horizontalTab').find(".resp-tab-content").addClass('animatedmedium fadeIn');
+                        setTimeout(function () {
+                            jQuery('#horizontalTab').find(".resp-tab-content").removeClass('animatedmedium fadeIn');
+                        }, 400);
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- VERTICAL TABS -->
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#verticalTab').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true,
+                activate: function () {
+                    if (jQuery(window).width() > 768) {
+                        jQuery('#verticalTab').find(".resp-tab-content").addClass('animatedmedium fadeIn');
+                        setTimeout(function () {
+                            jQuery('#verticalTab').find(".resp-tab-content").removeClass('animatedmedium fadeIn');
+                        }, 400);
+                    }
+                }
+            });
+        });
+    </script>
     <!-- LIGHTGALLERY -->
     <script type="text/javascript" src="js/lightgallery.js"></script>
     <!-- FLICKR -->
